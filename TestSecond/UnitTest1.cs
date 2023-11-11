@@ -65,7 +65,10 @@ namespace TestSecond
             driver.FindElement(By.XPath("//*[@id=\"__next\"]/div[3]/div/div/form/div[4]/button")).Click();
             Thread.Sleep(5000);    
             driver.FindElement(By.XPath("//*[@id=\"__next\"]/div/div[2]/div[1]")).Click();
+            Thread.Sleep(4000);
             driver.FindElement(By.XPath("//*[@id=\"__next\"]/div[1]/div/div[2]/div[1]/div[2]/div[2]/div[2]/div/a[1]/div[1]/div/div[2]")).Click();
+            
+            
             string parentWindowHandle = driver.CurrentWindowHandle;
             foreach (string windowHandle in driver.WindowHandles)
             {
